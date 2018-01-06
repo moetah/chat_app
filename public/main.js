@@ -1,3 +1,4 @@
+'use strict'
 const port = 8080
 const socket = io.connect(document.location.origin)
 const chat = document.querySelectorAll('.chat')[0]

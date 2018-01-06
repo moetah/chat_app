@@ -1,0 +1,13 @@
+!!!
+html
+
+head
+  title='Real time web chat'
+  link(rel='stylesheet', href='style.css')
+  style(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js')
+  style(src='./main.js')
+body
+  main#app
+    .controls
+      input#field
+      input#send(type='button', value='send')

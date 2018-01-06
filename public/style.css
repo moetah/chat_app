@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #dde;
+  background: radial-gradient(circle at top, rgba(50, 52, 68, .3) 0%, rgba(8, 18, 22, .2) 60%, rgba(2, 3, 4, .3) 100%) fixed, radial-gradient(circle at bottom, rgba(192, 216, 255, .1) 5%, rgba(8, 12, 16, .1) 60%, rgba(4, 6, 8, .1)) fixed;
+  background-color: rgba(22,24,32,1);
+}
+
+.app {
+  width: 400px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat {
+  height: 730px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: overlay;
+}
+
+.chat-line {
+  background-color: rgba(0,0,0,.3);
+  padding: 8px 16px;
+  margin-top: 4px;
+  word-wrap: break-word
+}
+
+.chat-line._status {
+  text-align: center;
+  padding: 16px 16px;
+}
+
+.name {
+  color: #f04;
+  font-weight: bold;
+}
+
+.chat-input {
+  font-size: 0;
+  margin-top: 10px;
+}
+
+.input-area {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 280px;
+  min-height: 40px;
+  padding: 10px ;
+  background-color: rgba(0,0,0,.3);
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.btn {
+  width: 80px;
+  margin-left: 20px;
+  border: 0;
+  background-color: rgba(0,0,0,.3);
+  color: #ddd;
+  height: 60px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgba(0,0,0,.5);
+}

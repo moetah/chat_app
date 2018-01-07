@@ -7,9 +7,12 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "socket.io": "latest",
     "express": "latest",
-    "jade": "latest"
+    "jade": "latest",
+    "perfect-scrollbar": "^1.3.0",
+    "socket.io": "latest",
+    "vue": "latest",
+    "vue-chat-scroll": "^1.2.1"
   },
   "author": "temu",
   "license": "ISC"

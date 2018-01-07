@@ -2,15 +2,21 @@
 <meta charset="utf-8">
 <title>temu web chat</title>
 <link rel="stylesheet" href="style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<script src="./vue.2.5.3.js"></script>
+<script src="./vue-chat-scroll.js"></script>
+<script src="./perfect-scrollbar.min.js"></script>
+<script src="./socket.io.js"></script>
 
 <main class="app">
-  <ul class="chat">
+  <ul class="chat" v-if="showChat" style="height: 6rem; opacity: 0" v-chat-scroll>
+    <li class="chat-line" v-for="line in chat" :class="'_' + line.status" ><span class="name"> {{ ( (line.status == 'status') ? line.name : line.name + ':' ) }}</span> <span>{{line.msg}}</span></li>
   </ul>
-  <div class="chat-input">
+  <h1 v-if="showNameTut">Name type tut</h1>
+  <form :class="formInput">
     <div role="textbox" contenteditable="true" type="text" class="input-area"></div>
-    <button type="button" class="btn submit">submit</button>
-  </div>
+    <button type="button" role="submit-name" class="btn submit">submit</button>
+  </form>
 </main>
 
 <script src="main.js"></script>

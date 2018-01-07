@@ -1,5 +1,8 @@
 'use strict'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 75b2da773c99cb05726bb896b11d588e18b0b437
 const port = 8080
 const socket = io.connect(document.location.origin)
 const chat = () => document.querySelectorAll('.chat')[0]
